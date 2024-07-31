@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "player",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "delantero",
+        "portero"
+      ]
+    },
+    "dominantFoot": {
+      "type": "enumeration",
+      "enum": [
+        "izquierdo",
+        "derecho",
+        "diestro"
+      ]
+    },
+    "birthDate": {
+      "type": "date"
+    },
+    "birthCountry": {
+      "type": "string"
+    },
+    "birthCity": {
+      "type": "string"
+    },
+    "youtubeVideo": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imagenPlayer": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "firstName"
+    },
+    "imagenPlayerLink": {
+      "type": "string"
+    }
+  }
+}
